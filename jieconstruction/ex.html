@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example1.css">
+    <link rel="icon" href="img/LOGO.webp" border-radius="50%" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <title>JIE Constructions INC.</title>
+</head>
+
+
+<body>
+  
+    <header>
+        <a href="#" class="logo">
+            <img class="logo" src="img/Company-icon2.webp" alt="logo">
+        </a>
+
+        <ul class="navlist">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ABOUT US</a></li>
+        </ul>
+        
+          <div class="nav-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars" width="20"></i><i class="fa-solid fa-user cute"></i></div>
+           <div class="profile" id="profileMenu">
+            <div class="subprofile">
+              <div class="userinfo">
+                <img src="webimage/LOGO.webp" alt="">
+                <p>cutie</p>
+            </div>
+           </div>
+           <div class="bx bx-menu" id="menu-icon"></div>
+           </div>
+          </div>
+    </header>
+
+    
+
+
+</body>
+<script src="example.js"></script>
+<script>
+  let profileMenu = document.getElementById("profileMenu");
+
+function toggleMenu() {
+    profileMenu.classList.toggle("open-menu")
+}
+</script>
+</html>

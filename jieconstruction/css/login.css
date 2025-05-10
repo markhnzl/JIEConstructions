@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: relative;
+    display: flex;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+.navlist {
+    display: flex;
+    
+    margin: 20px;
+
+    
+}
+.navlist a {
+    font-size: 13px;
+    font-family: "Julius Sans One", sans-serif;
+    
+    margin: 0 20px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.navlist a:hover {
+    color: #245682;
+    background-color: white;
+    padding: 10px 15px;
+    
+    
+
+}
+.navlist a:active {
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 9px 24px;
+    background-color: rgb(67, 67, 67);
+    color: #76b8f3;
+    transform: scaleX(0.90);
+}
+.navlist a.active {
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 10px 24px;
+    background-color: white;
+    color: #245682;
+    transition: all .1s ease-in-out;
+}
+header {
+    position: relative;
+    width: 100%;    
+    height: 12vh;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 35px 7%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #245682;
+    transition: all .50s ease;
+
+    
+}
+.right-content {
+    display: flex;
+    align-items: center;
+}
+.nav-btn {
+    font-family: "Julius Sans One", sans-serif;
+    display: inline-block;
+    padding: 9px 24px;
+    border-radius: 7px;
+    background-color: white;
+   font-size: 15px; 
+   font-weight: 500;
+}
+.nav-btn:hover {
+    background-color: #76b8f3;
+    transition: all .5s ease;
+}
+#menu-icon {
+    font-size: 42px;
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+@media (max-width: 1770px) {
+    header {
+        padding: 22px 4%;
+    }
+}
+@media (max-width: 950px) {
+    #menu-icon {
+        display: block;
+        z-index: 1001;
+    }
+    .navlist {
+        position: absolute;
+        width: 100%;
+        height: 100vh;  
+        padding: 100px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #245682;
+        backdrop-filter: blur(32px);
+        transition: all .6s ease-in-out;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        
+        
+    }
+    .navlist a {
+        display: block;
+        padding: 0;
+        margin: 0px 0px 25px 0px;
+        font-size: 1.7rem;
+        
+    }
+    .navlist.open {
+        
+        left: 10%;
+        opacity: calc(0.90);
+    }
+}
+
+@media (max-width: 950px) {
+    .service {
+        max-width: 60vh;
+    }
+
+}
+.hb {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+.torm {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 50px;
+    height: auto;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #245682;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.torm h2 {
+    padding: 20px;
+    font-size: 3rem;
+    color: white;
+}
+.torm img {
+    width: 150px;
+}
+.torm-group {
+    margin-left: 10px;
+    padding: 10px;
+}
+.torm-group input {
+    width: 100%;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 0 10px inset rgba(155, 155, 155, 0.5);
+    border-radius: 7px;
+    border: none;
+
+}
+.torm p {
+   margin: 10px;
+   padding-bottom: 10px;
+   color: white;
+}
+.torm a {
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.torm a:hover {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
+button {
+    margin: 20px;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+button:hover {
+    background-color: #9f8e8e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+span {
+    color: red;
+    font-size: 15px;
+ }
+
+ .footer {
+    
+    font-family: "Julius Sans One", sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    background-color: #245682;
+    color: #eee;
+    padding: 40px 20px 20px;
+    line-height: 40px;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-about,
+.footer-links,
+.footer-company,
+.footer-terms {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 20px;
+}
+
+.footer p, .footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+  }
+
+  /* terms condition */
+
+  .imgggg {
+    background-color: #1d4669;
+    height: auto;
+  }
+
+  .terms-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+  }
+
+  .terms {
+    margin-top: 20px;
+  }
+  .terms h2 {
+    color: white;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .terms h3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .terms p {
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
